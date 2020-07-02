@@ -70,23 +70,23 @@ Luckily for you, this problem had already been solved for you before you even kn
 
 **Enter Docker Compose...**
 
-- [ ] Rather than spending forever talking about what Docker Compose does and why it's great, let's just dive into a demonstration. `cd` into the directory '/6-Docker_Compose_For_Multi-Container_Apps'
+- [x] Rather than spending forever talking about what Docker Compose does and why it's great, let's just dive into a demonstration. `cd` into the directory '/6-Docker_Compose_For_Multi-Container_Apps'
 
-- [ ] Run the command `ls` and notice that we have directories that contain the source code for the services of our polling app from the previous Module (the 'survey_server' and 'results_server'). Each of these directories contains it's own Dockerfile that defines the steps to build it's requisite image. This should all be familiar to you.
+- [x] Run the command `ls` and notice that we have directories that contain the source code for the services of our polling app from the previous Module (the 'survey_server' and 'results_server'). Each of these directories contains it's own Dockerfile that defines the steps to build it's requisite image. This should all be familiar to you.
 
-- [ ] Also notice that there is a file in Module 6 that you may not be familiar with, the one named 'docker-compose.yml'. We'll dive into this shortly.
+- [x] Also notice that there is a file in Module 6 that you may not be familiar with, the one named 'docker-compose.yml'. We'll dive into this shortly.
 
-- [ ] Let's do this thing! Run `docker-compose up` ! 
+- [x] Let's do this thing! Run `docker-compose up` ! 
 
-- [ ] After all the logging has stopped go ahead and use your browser to navigate to `localhost:8080` and `localhost:3000` in separate tabs. Mess around with the app, create some entries, and see that everything works exactly as before!
+- [x] After all the logging has stopped go ahead and use your browser to navigate to `localhost:8080` and `localhost:3000` in separate tabs. Mess around with the app, create some entries, and see that everything works exactly as before!
 
 **How is this possible? We just ran a single command! This is WITCHCRAFT!**
 
 But, no. Not witchcraft. It's the magic of Docker Compose.
 
-- [ ] We brought up our app in an attached state so the innards of our app are still waiting for commands in the terminal. Press `Ctrl + C` to stop the containers.
+- [x] We brought up our app in an attached state so the innards of our app are still waiting for commands in the terminal. Press `Ctrl + C` to stop the containers.
 
-- [ ] **Docker Compose uses the 'docker-compose.yml' file as instructions for how to bring up our app.** Let's take a peek at it and break down how the 'docker-compose.yml' file is interpreted! Go ahead and open it up and you'll see this:
+- [x] **Docker Compose uses the 'docker-compose.yml' file as instructions for how to bring up our app.** Let's take a peek at it and break down how the 'docker-compose.yml' file is interpreted! Go ahead and open it up and you'll see this:
 
 ```
 version: '3'
@@ -197,9 +197,9 @@ Removing network 6dockercomposeformulticontainerapps_default
 
 ```
 
-- [ ] `docker-compose down` does three things, first it stops all the app's containers
+- [x] `docker-compose down` does three things, first it stops all the app's containers
 
-- [ ] Next it removes all the app's containers; confirm that they are gone by running `docker ps -a`-
+- [x] Next it removes all the app's containers; confirm that they are gone by running `docker ps -a`-
 
 - [ ] Finally it removes the network that your app's containers were attached to; run `docker network ls` to confirm this.
 
